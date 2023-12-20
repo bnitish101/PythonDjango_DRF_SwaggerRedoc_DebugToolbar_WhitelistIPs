@@ -5,15 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Django",
+            "name": "Python: DRF Project",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/drf_project/manage.py",
             "args": [
-                "runserver"
+                "runserver",
+                "8001"
             ],
             "django": true,
-            "justMyCode": true
+            "justMyCode": true,
+            "env": { 
+                "SITE_ID": "1", 
+                "DJANGO_SETTINGS_MODULE": "drf_project.settings" 
+            }
         }
     ]
 }
